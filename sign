@@ -1,0 +1,225 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local NO1 = Instance.new("TextButton")
+local NO2 = Instance.new("TextButton")
+local NO6 = Instance.new("TextButton")
+local NO5 = Instance.new("TextButton")
+local NO4 = Instance.new("TextButton")
+local NO3 = Instance.new("TextButton")
+local NO12 = Instance.new("TextButton")
+local NO11 = Instance.new("TextButton")
+local NO10 = Instance.new("TextButton")
+local NO9 = Instance.new("TextButton")
+local NO8 = Instance.new("TextButton")
+local NO7 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(255, 255, 0)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0.846632183, 0, 0.490342081, 0)
+Main.Size = UDim2.new(0, 176, 0, 390)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 217, 0)
+TextLabel.Position = UDim2.new(0.0454545468, 0, 0.0255474448, 0)
+TextLabel.Size = UDim2.new(0, 161, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Warp for a sign"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 4.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+NO1.Name = "NO.1"
+NO1.Parent = Main
+NO1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO1.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO1.Position = UDim2.new(0.0909091011, 0, 0.189481616, 0)
+NO1.Size = UDim2.new(0, 65, 0, 40)
+NO1.Font = Enum.Font.SourceSans
+NO1.Text = "NO.1"
+NO1.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO1.TextSize = 20.000
+NO1.TextWrapped = true
+NO1.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(604.423035, 22.6203995, 819.57373, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+NO2.Name = "NO.2"
+NO2.Parent = Main
+NO2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO2.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO2.Position = UDim2.new(0.539772689, 0, 0.189481616, 0)
+NO2.Size = UDim2.new(0, 65, 0, 40)
+NO2.Font = Enum.Font.SourceSans
+NO2.Text = "NO.2"
+NO2.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO2.TextSize = 20.000
+NO2.TextWrapped = true
+NO2.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(631.120544, 21.7422771, 141.038864, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+NO6.Name = "NO.6"
+NO6.Parent = Main
+NO6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO6.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO6.Position = UDim2.new(0.539772689, 0, 0.477693111, 0)
+NO6.Size = UDim2.new(0, 65, 0, 40)
+NO6.Font = Enum.Font.SourceSans
+NO6.Text = "NO.6"
+NO6.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO6.TextSize = 20.000
+NO6.TextWrapped = true
+NO6.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(92.4085693, 21.469244, 1301.08289, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+NO5.Name = "NO.5"
+NO5.Parent = Main
+NO5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO5.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO5.Position = UDim2.new(0.0909090638, 0, 0.477693111, 0)
+NO5.Size = UDim2.new(0, 65, 0, 40)
+NO5.Font = Enum.Font.SourceSans
+NO5.Text = "NO.5"
+NO5.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO5.TextSize = 20.000
+NO5.TextWrapped = true
+NO5.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-740.826599, 21.8622017, 1431.92603, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+NO4.Name = "NO.4"
+NO4.Parent = Main
+NO4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO4.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO4.Position = UDim2.new(0.539772689, 0, 0.331023246, 0)
+NO4.Size = UDim2.new(0, 65, 0, 40)
+NO4.Font = Enum.Font.SourceSans
+NO4.Text = "NO.4"
+NO4.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO4.TextSize = 20.000
+NO4.TextWrapped = true
+NO4.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-660.954224, 21.8419819, 1056.22192, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+NO3.Name = "NO.3"
+NO3.Parent = Main
+NO3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO3.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO3.Position = UDim2.new(0.0909090638, 0, 0.331023246, 0)
+NO3.Size = UDim2.new(0, 65, 0, 40)
+NO3.Font = Enum.Font.SourceSans
+NO3.Text = "NO.3"
+NO3.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO3.TextSize = 20.000
+NO3.TextWrapped = true
+NO3.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-512.752075, 21.6916809, 716.116394, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+NO12.Name = "NO.12"
+NO12.Parent = Main
+NO12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO12.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO12.Position = UDim2.new(0.539772689, 0, 0.875128984, 0)
+NO12.Size = UDim2.new(0, 65, 0, 40)
+NO12.Font = Enum.Font.SourceSans
+NO12.Text = "NO.12"
+NO12.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO12.TextSize = 20.000
+NO12.TextWrapped = true
+NO12.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-275.764008, 21.7705498, 217.251877, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+NO11.Name = "NO.11"
+NO11.Parent = Main
+NO11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO11.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO11.Position = UDim2.new(0.0909090638, 0, 0.875128984, 0)
+NO11.Size = UDim2.new(0, 65, 0, 40)
+NO11.Font = Enum.Font.SourceSans
+NO11.Text = "NO.11"
+NO11.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO11.TextSize = 20.000
+NO11.TextWrapped = true
+NO11.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-857.177795, 21.570549, 314.080688, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+NO10.Name = "NO.10"
+NO10.Parent = Main
+NO10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO10.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO10.Position = UDim2.new(0.539772689, 0, 0.746923923, 0)
+NO10.Size = UDim2.new(0, 65, 0, 40)
+NO10.Font = Enum.Font.SourceSans
+NO10.Text = "NO.10"
+NO10.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO10.TextSize = 20.000
+NO10.TextWrapped = true
+NO10.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(378.670349, 22.337595, 804.874084, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+NO9.Name = "NO.9"
+NO9.Parent = Main
+NO9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO9.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO9.Position = UDim2.new(0.0909090638, 0, 0.746923923, 0)
+NO9.Size = UDim2.new(0, 65, 0, 40)
+NO9.Font = Enum.Font.SourceSans
+NO9.Text = "NO.9"
+NO9.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO9.TextSize = 20.000
+NO9.TextWrapped = true
+NO9.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-189.928421, 21.8527584, 2885.35352, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+NO8.Name = "NO.8"
+NO8.Parent = Main
+NO8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO8.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO8.Position = UDim2.new(0.539772689, 0, 0.608462334, 0)
+NO8.Size = UDim2.new(0, 65, 0, 40)
+NO8.Font = Enum.Font.SourceSans
+NO8.Text = "NO.8"
+NO8.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO8.TextSize = 20.000
+NO8.TextWrapped = true
+NO8.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(752.996887, 21.9027596, 3051.94336, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+NO7.Name = "NO.7"
+NO7.Parent = Main
+NO7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NO7.BorderColor3 = Color3.fromRGB(255, 255, 0)
+NO7.Position = UDim2.new(0.0909090638, 0, 0.608462334, 0)
+NO7.Size = UDim2.new(0, 65, 0, 40)
+NO7.Font = Enum.Font.SourceSans
+NO7.Text = "NO.7"
+NO7.TextColor3 = Color3.fromRGB(255, 0, 0)
+NO7.TextSize = 20.000
+NO7.TextWrapped = true
+NO7.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-127.321472, 23.338438, 892.904358, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
