@@ -1,0 +1,8 @@
+_G.f = true
+local p = game.Players.LocalPlayer.Character
+repeat wait()
+for _,v in pairs(workspace["Air Race"]:GetDescendants()) do
+if v.Name == "TouchPart" then v.CFrame = p.HumanoidRootPart.CFrame
+end
+end
+until _G.f == false
