@@ -1,0 +1,31 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Unlimited Upgrade Simulator", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Menu")
+Section:NewButton("INFINITY GEMS", "Click", function()
+    local args = {
+   [1] = -999999999999999999999999999999
+}
+
+game:GetService("ReplicatedStorage").Event.Draw_Function:InvokeServer(unpack(args))
+end)
+Section:NewButton("INFINITY POWER/COINS", "Click", function()
+    local args = {
+   [1] = "Power",
+   [2] = workspace:FindFirstChild("\230\156\168\230\161\169"):FindFirstChild("\230\156\168\230\161\1691").MeshPart,
+   [3] = 999999999999999999999999999999
+}
+
+game:GetService("ReplicatedStorage").Event.GradePromotion:FireServer(unpack(args))
+end)
+Section:NewButton("Auto ACP", "ButtonInfo", function()
+    while true do
+	local args = {
+    [1] = "SitInMeditation"
+}
+
+game:GetService("ReplicatedStorage").Event.GradePromotion:FireServer(unpack(args))
+	wait(1)
+end
+end)
