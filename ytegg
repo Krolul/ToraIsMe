@@ -1,0 +1,36 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("YouTube Life! Egg Hunt Event!", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Auto Farm Egg")
+Section:NewToggle("ON-OFF", ".", function(state)
+    if state then
+        getgenv().egg = true
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+while getgenv().egg == true do
+for i ,v in pairs(game:GetService("Workspace").ScriptingParts:GetDescendants()) do
+   if v:IsA("MeshPart") then
+       player.CFrame = v.CFrame
+       if v:FindFirstChild("ProximityPrompt") then
+       fireproximityprompt(v.ProximityPrompt)
+   end
+end
+end
+wait()
+end
+    else
+        getgenv().egg = false
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+while getgenv().egg == true do
+for i ,v in pairs(game:GetService("Workspace").ScriptingParts:GetDescendants()) do
+   if v:IsA("MeshPart") then
+       player.CFrame = v.CFrame
+       if v:FindFirstChild("ProximityPrompt") then
+       fireproximityprompt(v.ProximityPrompt)
+   end
+end
+end
+wait()
+end
+    end
+end)
