@@ -1,0 +1,16 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Scuba Diving at Quill Lake", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Manu")
+Section:NewButton("Get Coin", ".", function()
+    local args = {
+   [1] = game:GetService("Players").LocalPlayer.GoldCoins,
+   [2] = 9999
+}
+
+game:GetService("ReplicatedStorage").ChangeValue:FireServer(unpack(args))
+end)
+Section:NewButton("Sell All", ".", function()
+    game:GetService("ReplicatedStorage").SellAll:FireServer()
+end)
