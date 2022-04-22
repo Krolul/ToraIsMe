@@ -1,0 +1,52 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Animal Simulator", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Egg Farm")
+Section:NewToggle("ON-OFF", ".", function(state)
+    if state then
+        getgenv().a = true
+while getgenv().a == true do
+for i ,v in pairs(game:GetService("Workspace").Eggs:GetChildren()) do
+   if v:IsA("MeshPart") then
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   end
+end
+wait()
+end
+    else
+        getgenv().a = false
+while getgenv().a == true do
+for i ,v in pairs(game:GetService("Workspace").Eggs:GetChildren()) do
+   if v:IsA("MeshPart") then
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   end
+end
+wait()
+end
+    end
+end)
+local Section = Tab:NewSection("Treasure Farm")
+Section:NewToggle("ON-OFF", ".", function(state)
+    if state then
+        getgenv().b = true
+while getgenv().b == true do
+for i ,v in pairs(game:GetService("Workspace").Treasures:GetChildren()) do
+   if v:IsA("MeshPart") then
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   end
+end
+wait()
+end
+    else
+        getgenv().b = false
+while getgenv().b == true do
+for i ,v in pairs(game:GetService("Workspace").Treasures:GetChildren()) do
+   if v:IsA("MeshPart") then
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   end
+end
+wait()
+end
+    end
+end)
