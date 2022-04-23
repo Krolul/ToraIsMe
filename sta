@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/Standupright/main/Stand%20UpRight.lua"))()
