@@ -1,0 +1,6 @@
+Key is:
+Nande
+(If it's not correct, it's updated. Press the Get Key button on the script's UI.)
+ 
+Script:
+loadstring(game:HttpGet"https://raw.githubusercontent.com/L1ZOT/Neverlose/main/Project-Meow_TEMP")()
